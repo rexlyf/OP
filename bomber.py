@@ -548,11 +548,11 @@ elif type == 0:
         nm = int(input("Enter Number of Messages To Send: "))
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
-maxlim = 1000
+maxlim = 50000
 if cc == "91":
-    maxlim = 1000
+    maxlim = 50000
 else:
-    maxlim = 20
+    maxlim = 500
 if nm > maxlim:
     print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
           str(maxlim) + ' SMS At Once...\n\n')
