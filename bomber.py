@@ -473,17 +473,6 @@ def start(target, counter, delay, ch, cc):
     exit()
 
 
-def update():
-    stuff_to_update = ['bomber.py', '.version']
-    for fl in stuff_to_update:
-        dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/" + fl).read()
-        file = open(fl, 'wb')
-        file.write(dat)
-        file.close()
-    print('\n\t\tUpdated Successfull !!!!')
-    print('\tPlease Run The Script Again...')
-    exit()
 
 
 clr()
@@ -506,7 +495,6 @@ except Exception:
 if ver != verl:
     print('\n\t\tAn Update is Available....')
     print('\tStarting Update...')
-    update()
 print("Your Version is Up-To-Date")
 print('\n\n\t\t\tStarting TBomb...\n\n')
 try:
